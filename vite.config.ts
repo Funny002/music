@@ -8,7 +8,16 @@ export default defineConfig({
   mode: 'development', // 模式，development|production
   resolve: { // 字符替换别名
     alias: {
-      '@/': './src/'
+      '@/': '/src/',
+      '@C/': '/src/components/',
+      '@Less/': '/src/assets/less/'
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        additionalData: '@import "@/assets/less/_base.less";'
+      }
     }
   },
   json: {

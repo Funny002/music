@@ -8,8 +8,10 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@types/jsmediatags": "^3.9.3",
     "animejs": "^3.2.1",
     "axios": "^0.24.0",
+    "jsmediatags": "^3.9.7",
     "vue": "^3.2.16"
   },
   "devDependencies": {
